@@ -17,7 +17,7 @@ class Marmitas extends Migration
             $table->bigIncrements('id');
             $table->string('nome');
             $table->longText('descricao');
-            $table->float('preco', 8,2);
+            $table->decimal('preco', 8, 2);
             $table->integer('estoque');
             $table->string('image');
             $table->integer('desconto')->nullable();

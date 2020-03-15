@@ -10,6 +10,6 @@ class ControllerMarmitas extends Controller
 {
     public function index(){
         $marmitas = marmitas::all();
-        response()->json($marmitas);
+        return response()->json($marmitas);
     }
 }
