@@ -33,7 +33,9 @@ class ControllerMarmitas extends Controller
             $marmitas->create($request->all());
             return response()->json('Marmita cadastrada com sucesso!');
         }
+    }
 
-        
+    public function show(marmitas $marmitas){
+        return response()->json($marmitas);
     }
 }
