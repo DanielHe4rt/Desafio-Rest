@@ -21,8 +21,7 @@ class Marmitas extends Migration
             $table->integer('estoque');
             $table->string('image');
             $table->integer('desconto')->nullable();
-
-
+            $table->timestamps();
         });
     }
 
