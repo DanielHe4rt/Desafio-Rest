@@ -53,10 +53,17 @@ class ControllerMarmitas extends Controller
         if($validator->fails()){
             $erros = $validator->errors();
             return response()->json($erros, 400);
-        }else{
+        }
+        else
+        {
             $marmitas->update($request->all());
             return response()->json('Editado com Sucesso');
         }
             
+    }
+
+    public function destroy(marmitas $marmita){
+        $marmita->delete();
+        return response()->json('Deletado com sucesso!');
     }
 }
