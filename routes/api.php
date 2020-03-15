@@ -11,3 +11,6 @@ Route::get('/exibirMarmita/{marmitas}', 'api\ControllerMarmitas@show')->name('ex
 
 #POST
 Route::post('/cadastrarMarmitas', 'api\ControllerMarmitas@store')->name('cadastrar');
+
+#PUT
+Route::put('/editarMarmitas/{marmitas}', 'api\ControllerMarmitas@update')->name('editar');
